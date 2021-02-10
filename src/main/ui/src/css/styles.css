@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", "Helvetica", Helvetica, sans-serif;
+    background: #6c757d;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+.main-section {
+    width: 80%;
+    margin: auto;
+}
+
+.header {
+    color: #fff;
+    text-align: center;
+}
+
+.user-list {
+    display: grid;
+    gap: 10px;
+}
+
+@media screen and (max-width: 767px) {    
+    .user-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (min-width: 768px) {
+    .user-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 1024px) {
+    .user-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.random-user {
+    width: 100%;
+    line-height: 1.5;
+    color: #000;
+    box-sizing: inherit;
+    position: relative;
+    background: #fff;
+    box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(34,36,38,.15);
+}
+
+.user-image {
+    float: left;
+    margin-right: 20px;
+}
+
+.user-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+.modal-title {
+    color: #000;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .main-section {
+        width: 90%;
+    }
+
+    .user-image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .user-image img {
+        width: 150px;
+        height: auto;
+    }
+
+    .random-user {
+        text-align: left;
+        word-break: break-word;
+        padding: 10px;
+    }
+}
